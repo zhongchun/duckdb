@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug: Unit Test (all)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/test/unittest",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug: Unit Test (by tag)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/test/unittest",
+            "args": ["[api]"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug: Unit Test (by name)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/test/unittest",
+            // "args": ["Test comment in CPP API"],
+            "args": ["Test using connection after database is gone"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug: SQL Logic Test (single file)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/test/unittest",
+            "args": ["test/sql/select/test_select_42.test"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug: DuckDB CLI",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/debug/duckdb",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
