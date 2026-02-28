@@ -1,0 +1,11 @@
+# name: test/sql/select/test_select_42.test
+# description: Test simple SELECT 42
+# group: [select]
+
+statement ok
+PRAGMA enable_verification
+
+query I
+SELECT 42
+----
+42
