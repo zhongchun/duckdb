@@ -1,4 +1,4 @@
-# DuckDB Codebase Structure
+# DuckDB Codebase Architecture
 
 ## What is DuckDB?
 
